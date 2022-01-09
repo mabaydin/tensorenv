@@ -7,7 +7,7 @@ import pandas_market_calendars as mcal
 from plotly.offline import init_notebook_mode, plot
 init_notebook_mode(connected=True)
 
-
+#Defining market capital
 def create_market_cal(start, end):
     nyse = mcal.get_calendar('NYSE')
     schedule = nyse.schedule(stocks_start, stocks_end)
